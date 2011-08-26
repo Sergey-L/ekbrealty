@@ -1,0 +1,58 @@
+﻿{% extends "base.html" %}
+{% load fb_versions %}
+
+{% block content %}
+<div class="AdvertItemInfo">
+    <h2><a href="#">{{ realty_detail.deal.name }} {{ realty_detail.realty.name }}</a></h2>
+    <div class="AdvertItemInfoTitle">{{ realty_detail.address }} / {{ realty_detail.sq }} кв.м</div>
+    <div class="AdvertItemInfoDate">{{ realty_detail.date }}</div>
+    
+    <div class="SubMenu">
+        <ul>
+            <li><a href="#" class="Active">Описание объекта</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Посмотреть на карте</a></li>
+        </ul>
+    </div>
+    
+    <div class="AdvertItemBaseInfoBlock">
+        <div class="AdvertItemImages">
+            <div class="AdvertItem">
+                    <span><img src="{% version realty_detail.gallery.values.0.image 'adv_big' %}" width="350" height="220" title="" alt="" /></span>
+            </div>
+            <div class="AdvertItemImagesList">
+                    {% for realty_img in realty_detail.gallery.values %}
+                        <span><img src="{% version realty_detail.gallery.values.0.image 'adv_bottom' %}" alt="" /></span>
+                    {% endfor %}
+            </div>	
+        </div>
+        
+        <div class="AdvertItemBaseInfo">
+            <ul>
+                    <li>{{ realty_detail.deal }} {{ realty_detail.realty }}</li>
+                    <li><span>Адрес:</span>{{ realty_detail.address }}</li>
+                    <li><span>Телефон:</span><b>{{ realty_detail.phone }}</b></li>
+                    <li><span>Веб-сайт:</span><a href="{{ realty_detail.site }}">{{ realty_detail.site }}</a></li>
+                    <li><span>E-mail:</span><a href="{{ realty_detail.email }}">{{ realty_detail.email }}</a></li>
+                    <li><span>Район:</span>{{ realty_detail.area }}</li>
+                    <li><span>Стоимость:</span>{{ realty_detail.cost }}{% if realty_detail.deal.name == "Сдать в аренду" %} рублей за метр в месяц{% endif %}</li>
+                    <li><span>Площадь:</span>{{ realty_detail.sq }} квадратный метр</li>
+                    <li><span>Контактное лицо:</span>Вероника Жигалева</li>
+                    <li><span>Компания:</span>Вася и Партнеры</li>
+            </ul>
+	</div>
+        <div class="AdvertItemInfoBlock">
+            <div class="AdvertItemInfoLeft">
+                {{ realty_detail.infoblock|safe }}
+	    </div>
+            <div class="AdvertItemInfoRight">
+                {{ realty_detail.content|safe }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block right_bottom %}
+
+{% endblock %}

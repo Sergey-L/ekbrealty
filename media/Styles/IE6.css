@@ -1,0 +1,77 @@
+.LeftMargin
+{
+	width: 50%;
+	float: left;
+	height: 10px;
+	display: block;
+	position: relative;
+	margin-right: -600px;
+	line-height: 0;
+}
+.RightMargin
+{
+	width: 50%;
+	float: right;
+	height: 10px;
+	display: block;
+	position: relative;
+	margin-left: -600px;
+	line-height: 0;
+}
+.MaxWidth
+{
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+	float: left;
+}
+.MinWidth
+{
+	width: expression(( document.documentElement.clientWidth || document.body.clientWidth) < 980 ? "980px" : "auto" );
+}
+.MainMenuInner
+{
+	padding: 0;
+}
+.NavBar
+{
+	height: 0;
+}
+.RoundedCorners .Overlay
+{
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=./Images/BackGrounds/ButtonOverlay.png,sizingMethod=scale);
+}
+.RoundedCorners .Overlay img
+{
+	display: none;
+}
+
+.NavBar .cn
+{
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=./Images/IE6/BlueMenu.png,sizingMethod=crop);
+}
+
+.OrangeButton .cn
+{
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=./Images/IE6/Orange.png,sizingMethod=crop);
+}
+.BlueButton .cn
+{
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=./Images/IE6/Blue.png,sizingMethod=crop);
+}
+.ButtonText
+{
+	position: relative;
+	margin: -36px 0 0 0;
+	z-index: 1000;
+	top: 18px;
+}
+
+.d-sh-tl
+{
+	padding-right: 30px;
+}

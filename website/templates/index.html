@@ -1,0 +1,100 @@
+﻿{% extends "base.html" %}
+{% load fb_versions %}
+
+{% block start_widthfix %}
+	<div class="WidthFix MainPage">
+{% endblock %}
+
+{% block quick_links %}
+	<div class="QuickLinks">
+		{{ request.infoblock.quick_links|safe }}
+	</div>
+{% endblock %}
+
+{% block content %}
+	{{ request.infoblock.realty_index_content|safe }}	
+	<div class="BannerLeft_400_240">&nbsp;</div>
+
+	<div id="deal_types_links" class="AdvertQuickLinks">
+		<ul>
+			<li>Новые предложения</li>
+			{% for item in show_realty_type_dict.items %}
+				<li><a href="/realties/{{ item.1 }}">{{ item.0 }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	
+	<div class="AdvertItems">
+		{% for realty_detail in realty_list %}
+			<span class="AdvertItem">
+				<span class="AdvertItemInner">
+					<a href="/realties/{{ realty_detail.id }}/">
+						<span class="AdvertItemImage">
+							<img src="{% version realty_detail.gallery.values.0.image 'adv_index' %}" width="105" height="70" alt="" title="" />
+						</span>
+						<span class="AdvertItemType"><span>{{ realty_detail.deal.name }}</span></span>
+						<span class="AdvertItemLink">{{ realty_detail.name }}</span>
+						<span class="AdvertItemArea">Площадь: {{ realty_detail.sq }} кв.м</span>
+						<span class="AdvertItemAddress">{{ realty_detail.address }}</span>
+					</a>
+				</span>
+			</span>
+		{% endfor %}
+		<span class="AdvertItem">
+			<span class="AdvertItemInner">
+				<div class="d-shadow Blue">
+					<div class="d-shadow-wrap">
+						<ul>
+							<li><a href="/realties/{{ all_realty_url }}"><span>Все объявления</span></a></li>
+							{% for item in realty_type_dict.items %}
+								<li><a href="/realties/{{ item.1 }}">{{ item.0 }}</a></li>
+							{% endfor %}
+						</ul>
+						<div class="d-sh-cn d-sh-tl">&nbsp;</div>
+						<div class="d-sh-cn d-sh-tr">&nbsp;</div>
+					</div>
+					<div class="d-sh-cn d-sh-bl">&nbsp;</div>
+					<div class="d-sh-cn d-sh-br">&nbsp;</div>
+				</div>
+			</span>
+		</span>
+		<ins>&nbsp;</ins>
+	</div>
+{% endblock %}
+{% block border_color %}
+	<div class="d-shadow Orange">
+{% endblock %}
+{% block right_bottom %}
+	<div class="SpecialOffers">
+		<div class="SpecialOfferItem">
+			<h2>Спецпредложения</h2>
+			<a href="/realties/{{ sp_realty.id }}/">
+				<span class="SpecialOfferItemImage">
+					<img src="{% version sp_realty.gallery.values.0.image 'specadv_index' %}" alt="" title="" />
+				</span>
+				<span class="SpecialOfferItemLink">{{ sp_realty.name }}</span>
+				<span class="SpecialOfferItemText">{{ sp_realty.region.name }}, {{ sp_realty.address }} ({{ sp_realty.area.name }}).</span>
+			</a>
+			<div class="RoundedCorners BlueButton">
+				<div class="Overlay">
+					<img src="/media/Images/BackGrounds/ButtonOverlay.png" width="100%" height="35" alt="" title="" />
+				</div>
+				<div class="cn tl"></div>
+				<div class="cn tr"></div>
+				<div class="ButtonText">
+					<a href="/specials/">Все<br />предложения</a>
+				</div>
+				<div class="cn bl"></div>
+				<div class="cn br"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="BannerRight_240_400">
+		<img src="/media/Images/Banner240-400.png" alt="" title="" />
+	</div>
+	
+	<div class="RightColumnInfoBlock">
+		{{ request.infoblock.guide_index|safe }}
+	</div>
+{% endblock %}

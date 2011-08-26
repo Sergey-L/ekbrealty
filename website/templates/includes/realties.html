@@ -1,0 +1,42 @@
+{% load fb_versions %}
+
+<div class="Grid">
+    <div class="RoundedCorners Silver">
+            <div class="cn tl"></div>
+            <div class="cn tr"></div>
+            <div class="SilverText">
+                    <div class="GridHeader">
+                            <div class="GridImage">&nbsp;</div>
+                            <div class="GridLink"><a href="?{{ query }}&sort=address">Адрес</a>{% if sort_by == 'address' %}{% include "includes/arrow.html" with inv=inv %}{% endif %}</div>
+                            <div class="GridArea"><a href="?{{ query }}&sort=sq">Площадь</a>{% if sort_by == 'sq' %}{% include "includes/arrow.html" with inv=inv %}{% endif %}</div>
+                            <div class="GridDistrict"><a href="?{{ query }}&sort=area">Район</a>{% if sort_by == 'area' %}{% include "includes/arrow.html" with inv=inv %}{% endif %}</div>
+                            <div class="GridCost"><a href="?{{ query }}&sort=cost">Стоимость</a>{% if sort_by == 'cost' %}{% include "includes/arrow.html" with inv=inv %}{% endif %}</div>
+                            <div class="GridDate"><a href="?{{ query }}&sort=date">Дата</a>{% if sort_by == 'date' %}{% include "includes/arrow.html" with inv=inv %}{% endif %}</div>
+                            <div class="GridNumber">&nbsp;</div>
+                    </div>
+            </div>
+            <div class="cn bl"></div>
+            <div class="cn br"></div>
+    </div>
+    {% for realty in realty_list%}
+        {% if forloop.counter == 2 %}
+            BANNER
+        {% endif %}
+        <div class="GridItem">
+            <div class="GridImage">
+                <a href="/realties/{{ realty.id }}/">
+                    <span><img src="{% version realty.gallery.values.0.image 'adv_search' %}" alt="" title="" /></span>
+                </a>
+            </div>
+            <div class="GridLink">
+                <a href="/realties/{{ realty.id }}/">{{ realty.address }}<span>&nbsp;</span></a>
+                <span class="GridItemType"><span>{{ realty.realty.name }}</span></span>
+            </div>
+            <div class="GridArea">{{ realty.sq }} м<sup>2</sup></div>
+            <div class="GridDistrict">{{ realty.area.name }}</div>
+            <div class="GridCost">{{ realty.cost }} рублей</div>
+            <div class="GridDate">{{ realty.date }}</div>
+            <div class="GridNumber"><span>№ {{ realty.id }}</span></div>
+        </div>
+    {% endfor %}
+</div>

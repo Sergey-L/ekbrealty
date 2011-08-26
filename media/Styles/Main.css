@@ -1,0 +1,1060 @@
+﻿html, body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html
+{
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+body
+{
+	width: 100%;
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+	background: #fff;
+	font-size: 100.01%;
+	font-family: Arial;
+	position: relative;
+	background: #fff;
+	vertical-align: baseline;
+}
+
+a:active, a:focus { outline: none; }
+img { vertical-align: bottom; }
+ol, ul { list-style: none; }
+
+.LeftMargin, .RightMargin { display: none; }
+.MaxWidth { max-width: 1100px; margin: 0 auto; }
+.MinWidth { min-width: 985px; }
+
+input[type="button"] {  width: auto; overflow: visible; }
+button, input, select, textarea { margin: 0; }
+
+sub, sup{ font-size: 60%; line-height: 0; position: relative; }
+sup{ top: -0.3em; }
+sub{ bottom: -0.25em; }
+
+a { color: #055F9F; }
+a:hover { color: #FF6633 !important; }
+
+.Header:after,
+.HeaderLeft:after,
+.Content:after,
+.SearchOptions:after,
+.SearchOptionsColumn:after,
+.SearchValues:after,
+.GridHeader:after,
+.GridItem:after,
+.GridPaging:after,
+.AdvertItemBaseInfoBlock:after,
+.AdvertItemInfoBlock:after,
+.AdvertItemEditMenu:after,
+.Footer:after,
+.FooterMenu:after
+{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.MainMenuInner ins,
+.AdvertItems ins,
+.SearchOptions ins
+{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	text-decoration: none;
+}
+
+.WidthFix
+{
+	width: 96%;
+	margin: 0 auto;
+}
+.TopBanner
+{
+	width: 100%;
+	text-align: center;
+	border: solid 1px #49A942;
+	margin: 10px 0 15px 0;
+}
+.Header
+{
+	width: 100%;
+}
+.HeaderLeft
+{
+	width: 46%;
+	float: left;
+	padding: 0 15px 0 0;
+	position: relative;
+	margin: 0 0 0 -15px;
+}
+.HeaderRight
+{
+	width: 52%;
+	float: right;
+}
+.Logo
+{
+	float: left;
+	padding: 0 0 10px 15px;
+}
+.Login
+{
+	float: left;
+	padding: 10px 0 0 4%;
+}
+.Login a
+{
+	color: #FF9900;
+	text-decoration: none;
+}
+.LoginIcon
+{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(../Images/Sprite.png) no-repeat 0 -514px;
+}
+.LoginText
+{
+	font-size: 0.8em;
+	text-decoration: underline;
+}
+.MainMenu
+{
+	width: 103%;
+	position: relative;
+	clear: both;
+}
+.MainMenuInner
+{
+	width: 92%;
+	text-justify: newspaper;
+	text-align: justify !important;
+	position: absolute;
+	z-index: 1;
+	left: 4%;
+	top: 0.5em;
+	height: 1.3em;
+	overflow: hidden;
+}
+.MainMenuInner a
+{
+	text-align: left !important;
+	display: inline-block;
+}
+.MainMenuInner a
+{
+	font-size: 0.75em;
+	color: white;
+	display: inline-block;
+}
+.SecondMenu ul
+{
+	width: 100%;
+	padding: 0.4em 0 0.8em 0;
+}
+.SecondMenu li
+{
+	display: inline;
+	padding: 0 2% 0 0;
+}
+.SecondMenu li a
+{
+	font-family: Georgia;
+	font-size: 1.04em;
+	vertical-align: top;
+	color: #CD473F;
+}
+.MainPage .BaseInfo
+{
+	width: 48%;
+	float: left;
+}
+.MainPage .BaseInfo ul
+{
+	padding: 0.3em 0 0.5em 0;
+	float: none;
+}
+.BaseInfo li
+{
+	width: 100%;
+	padding: 0 0 0.2em 0;
+}
+.BaseInfo li a
+{
+	font-size: 1.3em;
+}
+.BaseInfo.
+{
+	width: 100%;
+}
+.BaseInfo h3
+{
+	float: left;
+	padding: 0.2em 0 0 0;
+}
+.BaseInfo ul
+{
+	float: left;
+	padding: 0 1% 0 2%;
+	display: inline-block;
+	width: 109px;
+}
+.BaseInfo .RoundedCorners
+{
+	display: inline-block;
+	float: left;
+}
+.MainPage .QuickLinks
+{
+	display: block !important;
+}
+.QuickLinks
+{
+	width: 48%;
+	float: left;
+	display: none;
+}
+.QuickLinks li
+{
+	width: 100%;
+	padding: 0 0 0.35em 0;
+}
+.QuickLinks li a
+{
+	font-size: 0.8em;
+}
+
+.Content
+{
+	width: 100%;
+}
+.Content h1
+{
+	font-size: 1.4em;
+	font-family: Georgia;
+	font-weight: normal;
+	line-height: 1.1em;
+	padding: 0 0 0.2em 0;
+	color: #000;
+}
+.Content h2
+{
+	font-size: 1.3em;
+	font-family: Georgia;
+	font-weight: normal;
+	line-height: 1.1em;
+	padding: 0 0 0.2em 0;
+	color: #000;
+}
+.Content p
+{
+	font-size: 0.8em;
+	color: #777;
+	line-height: 1.5em;
+	padding: 0 0 0.6em 0;
+}
+
+h3
+{
+	font-size: 1.2em;
+	font-family: Georgia;
+	font-weight: normal;
+	line-height: 1.1em;
+	padding: 0 0 0.2em 0;
+	color: #000;
+}
+
+.MainPage .LeftColumn
+{
+	width: 46%;
+	margin: -100px 0 0 0;
+}
+.MainPage .RightColumn
+{
+	width: 52%;
+}
+
+.LeftColumn
+{
+	width: 68%;
+	float: left;
+	position: relative;
+}
+.RightColumn
+{
+	width: 30%;
+	float: right;
+	margin: 15px 0 0 0;
+}
+
+.BannerLeft_400_240
+{
+	width: 100%;
+	clear: both;
+	border: solid 1px #ccc;
+	height: 240px;
+	overflow: hidden;
+	margin: 10px 0 20px 0;
+	background: url(../Images/Banner400-240.jpg) no-repeat 50% 50%;
+}
+
+.AdvertQuickLinks
+{
+	width: 100%;
+	padding: 0 0 0.7em 0;
+}
+.AdvertQuickLinks ul
+{
+	width: 100%;
+}
+.AdvertQuickLinks li
+{
+	font-family: Georgia;
+	font-size: 1.3em;
+	display: inline;
+	padding: 0 2% 0 0;
+}
+.AdvertQuickLinks li a
+{
+	vertical-align: top;
+	color: #2172BD;
+	font-size: 0.6em;
+	font-family: Arial;
+	position: relative;
+	top: 0.5em;
+}
+.AdvertItems
+{
+	width: 100%;
+	text-justify: newspaper;
+	text-align: justify !important;
+	vertical-align: top;
+}
+.AdvertItem
+{
+	display: inline;
+}
+.AdvertItem a
+{
+	text-decoration: none;
+}
+.MainPage .AdvertItemInner
+{
+	width: 30%;
+}
+
+.AdvertItemInner
+{
+	width: 23%;
+	vertical-align: top;
+	display: inline-block;
+	text-align: left;
+	color: #545454;
+	padding: 0 0 0.5em 0;
+}
+.AdvertItemImage
+{
+	width: 105px;
+	padding: 5px;
+	display: block;
+	border: 1px solid #D9E6E9;
+}
+.AdvertItemType
+{
+	display: block;
+	padding: 0 0 0.3em 0;
+}
+.AdvertItemType span
+{
+	font-size: 0.7em;
+	background: #FD9;
+	color: #444;
+	padding: 0.2em 0.4em;
+	margin: 0.3em 0 0 5px;
+	display: inline-block;
+}
+.AdvertItemLink
+{
+	text-decoration: underline;
+	margin: 0 0 0 5px;
+	display: inline-block;
+	font-size: 0.8em;
+	position: relative;
+	left: 0.4em;
+	padding: 0 0 0.4em 0;
+}
+.AdvertItemArea,
+.AdvertItemAddress
+{
+	display: block;
+	font-size: 0.7em;
+	color: #545454;
+	padding: 0 0 0.2em 0.4em;
+	margin: 0 0 0 5px;
+}
+.AdvertItemPhone
+{
+	display: block;
+	font-size: 0.7em;
+	color: #545454;
+	padding: 0.5em 0 0.2em 0;
+}
+.AdvertItem .Blue
+{
+	width: 100%;
+	left: -15px;
+}
+.AdvertItem li
+{
+	font-size: 0.8em;
+	font-style: italic;
+	padding: 0.3em 0;
+}
+.AdvertItem li a
+{
+	text-decoration: underline;
+	color: #535353;
+}
+.AdvertItem li a span
+{
+	width: 10px;
+	text-align: center;
+	color: #055F9F;
+	display: inline-block;
+	text-decoration: underline;
+}
+.AdvertItemEdit .AdvertItemInner
+{
+	width: 19%;
+}
+.AdvertItemEditMenu
+{
+	width: 100%;
+	padding: 0 0 1em 0;
+}
+.AdvertItemEditMenu div
+{
+	width: 17%;
+	font-size: 0.8em;
+	font-weight: bold;
+	float: left;
+	padding: 0.15em 0 0 0;
+}
+.AdvertItemEditMenu ul
+{
+	width: 80%;
+	float: left;
+}
+.AdvertItemEditMenu li
+{
+	display: inline;
+	padding: 0 0.5em 0 0;
+}
+.AdvertItemEditMenu a
+{
+	font-size: 0.8em;
+	white-space: nowrap;
+}
+.AdvertItemEditMenu span
+{
+	color: #777;
+	font-size: 0.9em;
+}
+.Search
+{
+	width: 100%;
+	padding: 0 0 20px 0;
+}
+.QuickSearch ul
+{
+	width: 100%;
+	padding: 0 0 0.5em 0;
+}
+.QuickSearch li
+{
+	display: inline;
+	font-size: 0.75em;
+	padding: 0 1% 0 0;
+}
+.QuickSearch li a
+{
+	vertical-align: top;
+	color: #2172BD;
+	position: relative;
+	top: 0.25em;
+}
+.SearchOptions
+{
+	width: 100%;
+	text-justify: newspaper;
+	text-align: justify !important;
+	vertical-align: top;
+}
+.SearchOptionsColumn
+{
+	width: auto !important;
+	position: relative !important;
+	height: auto !important;
+	display: inline-block;
+	font-size: 1em !important;
+	line-height: normal !important;
+	vertical-align: top;
+	/*float: left;*/
+}
+.SearchOptionsColumnTitle
+{
+	display: block;
+	font-size: 0.75em;
+	color: #222;
+}
+.SearchOptionsColumn ul
+{
+	float: left;
+	position: relative;
+	left: -0.4em;
+	padding: 0.3em 0 0 0;
+}
+.SearchOptionsColumn li
+{
+	font-size: 0.8em;
+	position: relative;
+	text-align: left !important;
+}
+.SearchOptionsColumn a
+{
+	display: inline-block;
+	padding: 0.2em 0.4em 0.3em 0.5em;
+}
+.SearchOptionsColumn .Active
+{
+	border-radius: 5px;
+	background: #FFCC01;
+	color: #fff;
+}
+.OtherItems a
+{
+	padding-right: 0;
+	color: #777;
+}
+.Arrows
+{
+	padding-left: 0 !important;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+/*
+.SearchOptionsColumn .Active .ActiveButtonText a
+{
+	color: #fff;
+}
+.SearchOptionsColumn .Active .ActiveButton .cn
+{
+	background: url(../Images/Sprite.png) no-repeat 0 -185px;
+}
+*/
+
+.SearchValues
+{
+	width: 100%;
+	clear: both;
+	position: relative;
+}
+.MainPage .SearchValues ul
+{
+	width: 25% !important;
+}
+.SearchValues ul
+{
+	width: 32%;
+	float: left;
+}
+.SearchValues li
+{
+	width: 100%;
+	font-size: 0.7em;
+	height: 2.5em;
+	color: #525252;
+	text-align: left !important;
+}
+.SearchValues li span
+{
+	padding: 0.45em 0 0 0;
+	display: inline-block;
+}
+.SearchValues li input
+{
+	width: 65%;
+}
+.MainPage .SearchButton
+{
+	float: left;
+	display: inline;
+	clear: none;
+	padding: 0.8em 0 0 0;
+	width: 113px;
+}
+.SearchButton
+{
+	clear: both;
+	padding: 1em 0 0 0;
+}
+
+.SearchButton input
+{
+	font-size: 1.6em;
+	padding: 0.3em 0.7em;
+	cursor: pointer;
+}
+.SpecialOffers
+{
+	width: 45%;
+	float: left;
+	color: #545454;
+	padding: 0 0 0 15px;
+}
+.SpecialOfferItem
+{
+	width: 100%;
+}
+.SpecialOfferItem a
+{
+	text-decoration: none;
+}
+.SpecialOfferItemInfo
+{
+	padding: 0 0 2em 0;
+}
+.SpecialOfferItemInfo li
+{
+	color: #777;
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+.SpecialOfferItemInfo ul
+{
+	padding: 0 0 1em 0;
+}
+
+.SpecialOfferItemImage
+{
+	padding: 0 0 1em 0;
+	border-bottom: solid 1px #ccc;
+	display: block;
+	margin: 0 0 1em 0;
+}
+.SpecialOfferItemLink
+{
+	font-size: 1em;
+	text-decoration: underline;
+}
+.SpecialOfferItemText
+{
+	display: block;
+	font-size: 0.8em;
+	color: #545454;
+	padding: 0.4em 0 1em 0;
+}
+.SpecialOfferItemInfo .AdvertItemInner
+{
+	width: 24% !important;
+}
+
+.SpecialOfferList
+{
+	padding: 1em 0 0 0;
+}
+.SpecialOfferList .AdvertItemInner
+{
+	width: 32%;
+}
+.SpecialOfferList .AdvertItemImage
+{
+	width: 183px;
+}
+.SpecialOfferList .AdvertItemLink
+{
+	left: 0;
+	padding: 0.6em 0 0.5em 0 !important;
+	margin: 0;
+}
+.SpecialOfferList .AdvertItemAddress
+{
+	margin: 0;
+	padding: 0;
+}
+.BannerRight_240_400
+{
+	width: 49%;
+	float: right;
+	text-align: right;
+}
+.RightColumnInfoBlock
+{
+	padding: 20px 0 2em 15px;
+	clear: both;
+}
+.RightColumnInfoBlock ul
+{
+	width: 100%;
+	padding: 0.4em 0 0.8em 0;
+}
+.RightColumnInfoBlock li
+{
+	display: inline;
+	padding: 0 2% 0 0;
+}
+.RightColumnInfoBlock li a
+{
+	font-family: Georgia;
+	font-size: 1em;
+	vertical-align: top;
+	color: #2172BD;
+}
+.RightColumnInfoBlock .BannerRight_240_400
+{
+	width: 100%;
+	float: none !important;
+	text-align: center !important;
+}
+.Grid
+{
+	width: 103%;
+	margin: 0.5em 0 0 0;
+	position: relative;
+	left: -15px;
+}
+.GridHeader
+{
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	font-size: 0.7em;
+	padding: 0 0 1em 0;
+}
+.GridHeader .GridImage
+{
+	border: none;
+}
+.GridHeader .GridNumber,
+.GridHeader .GridLink,
+.GridHeader .GridArea,
+.GridHeader .GridDistrict,
+.GridHeader .GridCost,
+.GridHeader .GridDate
+{
+	padding: 0;
+}
+.GridHeader a
+{
+	color: #000;
+}
+.GridItem
+{
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+	position: relative;
+	font-size: 0.75em;
+	padding: 0.6em 0;
+}
+.GridItem:hover
+{
+	background: #F8F8F8;
+}
+.GridImage
+{
+	width: 14%;
+	float: left;
+}
+.GridImage span
+{
+	padding: 5px;
+	display: inline-block;
+	border: 1px solid #D9E6E9;
+}
+.GridImage img
+{
+	width: 70px;
+}
+.GridLink
+{
+	width: 20%;
+	float: left;
+	padding: 0.7em 0 0 0;
+}
+.GridLink a span
+{
+	width: 11px;
+	height: 9px;
+	display: inline-block;
+	background: url(../Images/Sprite.png) no-repeat -5px -230px;
+	margin: 0.2em 0 0 0.2em;
+}
+.GridItemType
+{
+	display: block;
+}
+.GridItemType span
+{
+	font-size: 0.9em;
+	background: #FD9;
+	color: #444;
+	padding: 0.2em 0.4em;
+	margin: 0.3em 0 0 0;
+	display: inline-block;
+}
+.GridArea
+{
+	width: 12%;
+	float: left;
+	padding: 0.7em 0 0 0;
+}
+.GridDistrict
+{
+	width: 18%;
+	float: left;
+	padding: 0.7em 0 0 0;
+}
+.GridCost
+{
+	width: 18%;
+	float: left;
+	padding: 0.7em 0 0 0;
+}
+.GridDate
+{
+	width: 10%;
+	float: left;
+	padding: 0.7em 0 0 0;
+}
+.GridNumber
+{
+	width: 7%;
+	float: left;
+}
+.GridNumber span
+{
+	font-size: 0.7em;
+	color: #999;
+	padding: 1.2em 0 0 0;
+	display: inline-block;
+}
+.GridPaging
+]{
+	/*width: 90%;*/
+	padding: 1em 0 5em 1em;
+}
+.GridPaging div
+{
+	float: left;
+	padding: 0 4% 0 0;
+}
+.GridPaging span
+{
+	font-size: 1.1em;
+	display: inline;
+	color: #222;
+}
+.GridPaging ul
+{
+	display: inline;
+	position: relative;
+	/*top: -0.05em;*/
+}
+.GridPaging li
+{
+	display: inline;
+	padding: 0 0.4em;
+}
+.GridPaging a
+{
+	font-size: 0.9em;
+}
+
+
+.AdvertItemInfo
+{
+	width: 100%;
+	position: relative;
+}
+.AdvertItemInfoTitle
+{
+	font-size: 1.8em;
+	font-family: Georgia;
+}
+.AdvertItemInfoDate
+{
+	top: 2.5em;
+	right: 0;
+	padding: 0.3em 0.5em;
+	position: absolute;
+	background: #EEEEEE;
+	color: #000;
+	font-size: 0.85em;
+}
+.AdvertItemImages
+{
+	width: 59%;
+	float: left;
+	max-width: 375px;
+}
+.AdvertItemImages span
+{
+	padding: 5px;
+	display: inline-block;
+	border: 1px solid #D9E6E9;
+}
+.AdvertItemImagesList
+{
+	padding: 5px 0 0 0;
+}
+
+.AdvertItemBaseInfoBlock
+{
+	width: 100%;
+	padding: 0 0 1em 0;
+}
+.AdvertItemBaseInfo
+{
+	width: 41%;
+	float: left;
+}
+.AdvertItemBaseInfo li
+{
+	color: #1F1F1F;
+	font-size: 0.8em;
+	padding: 0 0 0.8em 0;
+}
+.AdvertItemBaseInfo li span
+{
+	color: #555;
+	display: inline-block;
+	padding: 0 0.5em 0 0;
+}
+.AdvertItemInfoBlock
+{
+	width: 100%;
+	border-top: 1px solid #ddd;
+	padding: 1em 0 0 0;
+}
+.AdvertItemInfoBlock p
+{
+	color: #1F1F1F !important;
+}
+.AdvertItemInfoLeft
+{
+	width: 59%;
+	float: left;
+	max-width: 375px;
+}
+.AdvertItemInfoRight
+{
+	width: 39%;
+	float: left;
+}
+.AdvertItemInfoBlock li
+{
+	color: #1F1F1F;
+	font-size: 0.8em;
+	padding: 0 0 0.8em 0;
+}
+.AdvertItemInfoCost
+{
+	width: 100%;
+	clear: both;
+	padding: 1em 0 2em 0;
+}
+
+.SubMenu
+{
+	width: 100%;
+	padding: 0.2em 0 1em 0;
+	position: relative;
+}
+.SubMenu li
+{
+	display: inline;
+	padding: 0 2% 0 0;
+}
+.SubMenu a
+{
+	font-size: 0.8em;
+}
+.SubMenu .Active
+{
+	padding: 0.2em 0.5em 0.4em 0.5em;
+	background: #FFCC01;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FC0), to(#F90) );
+	background: -moz-linear-gradient(#FC0, #FF900);
+	background: linear-gradient(#FC0, #F90);
+	color: #fff;
+	border-radius: 5px;
+}
+
+.Footer
+{
+	width: 100%;
+	border-top: 1px solid #ddd;
+	position: relative;
+	padding: 1em 0 0 0;
+}
+.FooterButton
+{
+	width: 18%;
+	float: left;
+}
+.FooterMainMenu
+{
+	width: 30%;
+	float: left;
+}
+.FooterMainMenu div
+{
+	width: 28%;
+	float: left;
+}
+
+.FooterSecondMenu
+{
+	width: 52%;
+	float: left;
+}
+.FooterSecondMenu div
+{
+	width: 32%;
+	float: left;
+	padding: 0.45em 0 0 0;
+}
+.Footer li
+{
+	width: 100%;
+	font-weight: bold;
+	color: #777777;
+	font-size: 0.75em;
+}
+.Footer a
+{
+	font-weight: normal;
+	display: inline-block;
+	margin: 0.5em 0 0.5em 0;
+}
+.Footer .Copyright
+{
+	width: 100%;
+	color: #777;
+	font-size: 0.7em;
+	line-height: 1.4em;
+	padding: 0 0 30px 0;
+}

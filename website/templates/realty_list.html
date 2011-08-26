@@ -1,0 +1,16 @@
+﻿{% extends "base.html" %}
+{% load common_tags %}
+
+{% block content %}
+    <h2>Что-то кого-то в где-то</h2>
+    {% include "includes/realties.html" with realty_list=object_list.object_list query=query %}
+    <div class="Grid">
+        <div class="GridPaging">
+    {% paginator object_list request %}
+    {% paginator_rows "1,2,3" request %}
+    </div>
+{% endblock %}
+
+{% block right_bottom %}
+
+{% endblock %}

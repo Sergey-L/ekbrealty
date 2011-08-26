@@ -1,0 +1,283 @@
+.RoundedCorners
+{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.RoundedCorners .cn
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: -20px;
+	top: -20px;
+	background: url(../Images/Sprite.png) no-repeat 0 0;
+}
+.RoundedCorners .cn.tr,
+.RoundedCorners .cn.br
+{
+	margin-left: 100%;
+}
+.RoundedCorners .cn.tl,
+.RoundedCorners .cn.bl
+{
+	width: 100% !important;
+}
+.RoundedCorners .cn.bl,
+.RoundedCorners .cn.br
+{
+	top: auto !important;
+}
+.RoundedCorners .Overlay
+{
+	width: 100%;
+	height: 35px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.NavBar
+{
+	padding: 19px 0 !important;
+}
+.NavBar .cn
+{
+	width: 38px;
+	height: 38px;
+	left: -19px;
+	top: -19px;
+	background: url(../Images/Sprite.png) no-repeat;
+}
+.NavBar .cn.tr
+{
+	clip: rect(19px 19px 38px 0) !important;
+}
+.NavBar .cn.br
+{
+	clip: rect(0 19px 38px 0) !important;
+}
+.NavBar .cn.tl
+{
+	clip: rect(19px auto 38px 19px) !important;
+}
+.NavBar .cn.bl
+{
+	clip: rect(0 auto 38px 19px) !important;
+}
+
+.OrangeButton,
+.BlueButton
+{
+	width: 150px;
+	padding: 26px 0 !important;
+}
+.OrangeButton .cn
+{
+	width: 52px;
+	height: 52px;
+	left: -26px;
+	top: -26px;
+	background: url(../Images/Sprite.png) no-repeat 0 -40px;
+}
+.BlueButton .cn
+{
+	width: 52px;
+	height: 52px;
+	left: -26px;
+	top: -26px;
+	background: url(../Images/Sprite.png) no-repeat 0 -96px;
+}
+.OrangeButton .cn.tr,
+.BlueButton .cn.tr
+{
+	clip: rect(26px 26px 52px 0) !important;
+}
+.OrangeButton .cn.br,
+.BlueButton .cn.br
+{
+	clip: rect(0 26px 52px 0) !important;
+}
+.OrangeButton .cn.tl,
+.BlueButton .cn.tl
+{
+	clip: rect(26px auto 52px 26px) !important;
+}
+.OrangeButton .cn.bl,
+.BlueButton .cn.bl
+{
+	clip: rect(0 auto 52px 26px) !important;
+}
+
+.ButtonText
+{
+	position: absolute;
+	left: 15px;
+	top: 9px;
+}
+.ButtonText a
+{
+	font: italic 1.1em/1em Arial;
+	color: #fff;
+	position: relative;
+	text-decoration: none;
+	z-index: 100;
+	display: block;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+
+.Silver
+{
+	padding: 14px 0 !important;
+	position: relative;
+	/*left: -15px;*/
+	margin: 0 0 0.5em 0;
+}
+.Silver .cn
+{
+	width: 28px;
+	height: 28px;
+	left: -14px;
+	top: -14px;
+	background: url(../Images/Sprite.png) no-repeat 0 -155px;
+}
+.Silver .cn.tr
+{
+	clip: rect(14px 14px 28px 0) !important;
+}
+.Silver .cn.br
+{
+	clip: rect(0 14px 28px 0) !important;
+}
+.Silver .cn.tl
+{
+	clip: rect(14px auto 28px 14px) !important;
+}
+.Silver .cn.bl
+{
+	clip: rect(0 auto 28px 14px) !important;
+}
+.SilverText
+{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 8px;
+}
+
+/*
+.ActiveButton
+{
+	padding: 11px 0 !important;
+	position: relative;
+	left: -7px;
+	display: inline-block;
+}
+.ActiveButton .cn
+{
+	width: 22px;
+	height: 22px;
+	left: -11px;
+	top: -11px;
+	background: none;
+}
+.ActiveButton .cn.tr
+{
+	clip: rect(11px 11px 22px 0) !important;
+}
+.ActiveButton .cn.br
+{
+	clip: rect(0 11px 12px 0) !important;
+}
+.ActiveButton .cn.tl
+{
+	clip: rect(11px auto 22px 11px) !important;
+}
+.ActiveButton .cn.bl
+{
+	clip: rect(0 auto 11px 11px) !important;
+}
+.ActiveButtonWrapper
+{
+	overflow: hidden;
+	height: 0;
+	line-height: 0;
+	padding: 0 7px 0 7px;
+	display: block;
+}
+.ActiveButtonText
+{
+	left: 7px;
+	top: 3px;
+	position: absolute;
+	z-index: 100;
+}
+*/
+
+.d-shadow
+{
+	position: relative;
+	margin: 0 15px 0 15px;
+	padding: 0 0 15px 0;
+}
+.d-shadow-wrap
+{
+	width: 100%;
+	position: relative;
+	padding: 15px 15px 0 15px;
+	margin: 0 -15px 0 -15px;
+	overflow: hidden;
+}
+.d-sh-cn
+{
+	position: absolute;
+	left: -15px;
+	z-index: -1;
+	font-size: 0;
+}
+.d-sh-tl,
+.d-sh-tr
+{
+	height: 2500px;
+	top: -15px;
+}
+.d-sh-tl,
+.d-sh-bl
+{
+	width:100%;
+}
+.d-sh-tr,
+.d-sh-br
+{
+	width: 15px;
+	margin-left: 100%;
+}
+.d-sh-bl,
+.d-sh-br
+{
+	height: 15px;
+}
+.d-sh-bl
+{
+	left: -30px;
+	padding-right: 30px;
+	clip: rect(auto auto auto 15px);
+}
+.d-sh-br
+{
+	left: 0px;
+}
+.Orange
+{
+	width: 94%;
+}
+.Orange .d-sh-cn
+{
+	background: url(../Images/BackGrounds/OrangeBorder.png);
+}
+.Blue .d-sh-cn
+{
+	background: url('../Images/BackGrounds/BlueBorder.png');
+}

@@ -1,0 +1,75 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ request.page.name }}</h2>
+    {{ request.page.content|safe }}
+    
+    <div class="AdvertItems SpecialOfferList">
+	<span class="AdvertItem">
+		<span class="AdvertItemInner">
+			<a href="#">
+				<span class="AdvertItemImage">
+					<img src="Images/AgencyLogo.png" width="183" alt="" title="" />
+				</span>
+				<span class="AdvertItemLink">Агентство недвижимости "Рога и Копыта"</span>
+				<span class="AdvertItemAddress">Екатеринбург, ул. Бажова, 219/в, офис 28</span>
+				<span class="AdvertItemPhone">Телефоны: 254-71-93, 254-73-21</span>
+			</a>
+		</span>
+	</span>
+
+	<span class="AdvertItem">
+		<span class="AdvertItemInner">
+			<a href="#">
+				<span class="AdvertItemImage">
+					<img src="Images/AgencyLogo.png" width="183" alt="" title="" />
+				</span>
+				<span class="AdvertItemLink">Агентство недвижимости "Рога и Копыта"</span>
+				<span class="AdvertItemAddress">Екатеринбург, ул. Бажова, 219/в, офис 28</span>
+				<span class="AdvertItemPhone">Телефоны: 254-71-93, 254-73-21</span>
+			</a>
+		</span>
+	</span>
+	<span class="AdvertItem">
+		<span class="AdvertItemInner">
+			<a href="#">
+				<span class="AdvertItemImage">
+					<img src="Images/AgencyLogo.png" width="183" alt="" title="" />
+				</span>
+				<span class="AdvertItemLink">Агентство недвижимости "Рога и Копыта"</span>
+				<span class="AdvertItemAddress">Екатеринбург, ул. Бажова, 219/в, офис 28</span>
+				<span class="AdvertItemPhone">Телефоны: 254-71-93, 254-73-21</span>
+			</a>
+		</span>
+	</span>
+	<span class="AdvertItem">
+		<span class="AdvertItemInner">
+			<a href="#">
+				<span class="AdvertItemImage">
+					<img src="Images/AgencyLogo.png" width="183" alt="" title="" />
+				</span>
+
+				<span class="AdvertItemLink">Агентство недвижимости "Рога и Копыта"</span>
+
+				<span class="AdvertItemAddress">Екатеринбург, ул. Бажова, 219/в, офис 28</span>
+
+				<span class="AdvertItemPhone">Телефоны: 254-71-93, 254-73-21</span>
+
+			</a>
+
+		</span>
+
+	</span>
+
+	<ins>&nbsp;</ins>
+
+</div>
+
+
+
+</div>
+{% endblock %}
+
+{% block search_form %}
+	{% include "search_form.html" %}
+{% endblock %}
